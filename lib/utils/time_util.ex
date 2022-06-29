@@ -44,7 +44,7 @@ defmodule Sonnam.Utils.TimeUtil do
   end
 
   # ############# string <==> datetime #############
-  @spec datetime_to_str(DateTime.t()) :: String.t()
+  @spec datetime_to_str(DateTime.t(), String.t()) :: String.t()
   def datetime_to_str(datetime, format \\ "%Y-%m-%d %H:%M:%S"),
     do: Calendar.strftime(datetime, format)
 
